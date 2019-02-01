@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Parts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Part number</th>
+      <th>Part name</th>
+      <th>Process 1</th>
+      <th>Process 2</th>
+      <th>Process 3</th>
+      <th>Color</th>
+      <th>Makerlayout</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parts.each do |part| %>
+      <tr>
+        <td><%= part.part_number %></td>
+        <td><%= part.part_name %></td>
+        <td><%= part.process_1 %></td>
+        <td><%= part.process_2 %></td>
+        <td><%= part.process_3 %></td>
+        <td><%= part.color %></td>
+        <td><%= part.makerlayout_id %></td>
+        <td><%= link_to 'Show', part %></td>
+        <td><%= link_to 'Edit', edit_part_path(part) %></td>
+        <td><%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Part', new_part_path %>

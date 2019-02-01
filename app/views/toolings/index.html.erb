@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Toolings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Deliver to</th>
+      <th>Part type</th>
+      <th>Part level</th>
+      <th>Commodity</th>
+      <th>Tool source</th>
+      <th>Go1 go2 lt</th>
+      <th>Go2 t1 lt</th>
+      <th>T1 t2 lt</th>
+      <th>T2 t3 lt</th>
+      <th>T3 t4 lt</th>
+      <th>T4 linetry lt</th>
+      <th>Raw material lt</th>
+      <th>Go1 1 target</th>
+      <th>Go1 1 actual</th>
+      <th>Go1 1 design target</th>
+      <th>Go1 1 correlated</th>
+      <th>Go1 2 target</th>
+      <th>Go1 2 actual</th>
+      <th>Go2 1 actual</th>
+      <th>Go2 2 target</th>
+      <th>Go2 2 actual</th>
+      <th>Go2 2 design target</th>
+      <th>Go2 2 correlated</th>
+      <th>Go2 3 actual</th>
+      <th>Go1 1 design number</th>
+      <th>Go1 2 design number</th>
+      <th>Go2 1 design number</th>
+      <th>Go2 2 design number</th>
+      <th>Go2 3 design change</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toolings.each do |tooling| %>
+      <tr>
+        <td><%= tooling.deliver_to %></td>
+        <td><%= tooling.part_type %></td>
+        <td><%= tooling.part_level %></td>
+        <td><%= tooling.commodity %></td>
+        <td><%= tooling.tool_source %></td>
+        <td><%= tooling.go1_go2_lt %></td>
+        <td><%= tooling.go2_t1_lt %></td>
+        <td><%= tooling.t1_t2_lt %></td>
+        <td><%= tooling.t2_t3_lt %></td>
+        <td><%= tooling.t3_t4_lt %></td>
+        <td><%= tooling.t4_linetry_lt %></td>
+        <td><%= tooling.raw_material_lt %></td>
+        <td><%= tooling.go1_1_target %></td>
+        <td><%= tooling.go1_1_actual %></td>
+        <td><%= tooling.go1_1_design_target %></td>
+        <td><%= tooling.go1_1_correlated %></td>
+        <td><%= tooling.go1_2_target %></td>
+        <td><%= tooling.go1_2_actual %></td>
+        <td><%= tooling.go2_1_actual %></td>
+        <td><%= tooling.go2_2_target %></td>
+        <td><%= tooling.go2_2_actual %></td>
+        <td><%= tooling.go2_2_design_target %></td>
+        <td><%= tooling.go2_2_correlated %></td>
+        <td><%= tooling.go2_3_actual %></td>
+        <td><%= tooling.go1_1_design_number %></td>
+        <td><%= tooling.go1_2_design_number %></td>
+        <td><%= tooling.go2_1_design_number %></td>
+        <td><%= tooling.go2_2_design_number %></td>
+        <td><%= tooling.go2_3_design_change %></td>
+        <td><%= link_to 'Show', tooling %></td>
+        <td><%= link_to 'Edit', edit_tooling_path(tooling) %></td>
+        <td><%= link_to 'Destroy', tooling, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tooling', new_tooling_path %>

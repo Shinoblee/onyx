@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deliver_to: MyString
+  part_type: MyString
+  part_level: MyString
+  commodity: MyString
+  tool_source: MyString
+  go1_go2_lt: 1
+  go2_t1_lt: 1
+  t1_t2_lt: 1
+  t2_t3_lt: 1
+  t3_t4_lt: 1
+  t4_linetry_lt: 1
+  raw_material_lt: 1
+  go1_1_target: 2019-02-01
+  go1_1_actual: 2019-02-01
+  go1_1_design_target: 2019-02-01
+  go1_1_correlated: 2019-02-01
+  go1_2_target: 2019-02-01
+  go1_2_actual: 2019-02-01
+  go2_1_actual: 2019-02-01
+  go2_2_target: 2019-02-01
+  go2_2_actual: MyString
+  go2_2_design_target: 2019-02-01
+  go2_2_correlated: 2019-02-01
+  go2_3_actual: 2019-02-01
+  go1_1_design_number: MyString
+  go1_2_design_number: MyString
+  go2_1_design_number: MyString
+  go2_2_design_number: MyString
+  go2_3_design_change: MyString
+
+two:
+  deliver_to: MyString
+  part_type: MyString
+  part_level: MyString
+  commodity: MyString
+  tool_source: MyString
+  go1_go2_lt: 1
+  go2_t1_lt: 1
+  t1_t2_lt: 1
+  t2_t3_lt: 1
+  t3_t4_lt: 1
+  t4_linetry_lt: 1
+  raw_material_lt: 1
+  go1_1_target: 2019-02-01
+  go1_1_actual: 2019-02-01
+  go1_1_design_target: 2019-02-01
+  go1_1_correlated: 2019-02-01
+  go1_2_target: 2019-02-01
+  go1_2_actual: 2019-02-01
+  go2_1_actual: 2019-02-01
+  go2_2_target: 2019-02-01
+  go2_2_actual: MyString
+  go2_2_design_target: 2019-02-01
+  go2_2_correlated: 2019-02-01
+  go2_3_actual: 2019-02-01
+  go1_1_design_number: MyString
+  go1_2_design_number: MyString
+  go2_1_design_number: MyString
+  go2_2_design_number: MyString
+  go2_3_design_change: MyString

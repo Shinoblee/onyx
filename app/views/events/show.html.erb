@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event name:</strong>
+  <%= @event.event_name %>
+</p>
+
+<p>
+  <strong>Line:</strong>
+  <%= @event.line %>
+</p>
+
+<p>
+  <strong>Weld dsps delivery:</strong>
+  <%= @event.weld_dsps_delivery %>
+</p>
+
+<p>
+  <strong>Weld delivery:</strong>
+  <%= @event.weld_delivery %>
+</p>
+
+<p>
+  <strong>Trim dsps delivery:</strong>
+  <%= @event.trim_dsps_delivery %>
+</p>
+
+<p>
+  <strong>Trim delivery:</strong>
+  <%= @event.trim_delivery %>
+</p>
+
+<p>
+  <strong>Tier3 delivery:</strong>
+  <%= @event.tier3_delivery %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @event.project_id %>
+</p>
+
+<p>
+  <strong>Plant:</strong>
+  <%= @event.plant_id %>
+</p>
+
+<p>
+  <strong>Stamp weld mat target:</strong>
+  <%= @event.stamp_weld_mat_target %>
+</p>
+
+<p>
+  <strong>Plastic mat target:</strong>
+  <%= @event.plastic_mat_target %>
+</p>
+
+<p>
+  <strong>Comp elect assy mat target:</strong>
+  <%= @event.comp_elect_assy_mat_target %>
+</p>
+
+<p>
+  <strong>Wire harness mat target:</strong>
+  <%= @event.wire_harness_mat_target %>
+</p>
+
+<p>
+  <strong>Cast machine mat target:</strong>
+  <%= @event.cast_machine_mat_target %>
+</p>
+
+<p>
+  <strong>Pipe tube mat target:</strong>
+  <%= @event.pipe_tube_mat_target %>
+</p>
+
+<p>
+  <strong>Rubber metal mat target:</strong>
+  <%= @event.rubber_metal_mat_target %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_cost: 1.5
+  event_id: 1
+  part_id: 1
+
+two:
+  event_cost: 1.5
+  event_id: 1
+  part_id: 1

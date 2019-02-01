@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Supplier number:</strong>
+  <%= @maker_layout.supplier_number %>
+</p>
+
+<p>
+  <strong>Location code:</strong>
+  <%= @maker_layout.location_code %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @maker_layout.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @maker_layout.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @maker_layout.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @maker_layout.country %>
+</p>
+
+<%= link_to 'Edit', edit_maker_layout_path(@maker_layout) %> |
+<%= link_to 'Back', maker_layouts_path %>

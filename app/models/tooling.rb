@@ -1,0 +1,2 @@
+class Tooling < ApplicationRecord
+end

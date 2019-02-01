@@ -1,0 +1,162 @@
+<%= form_with(model: tooling, local: true) do |form| %>
+  <% if tooling.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tooling.errors.count, "error") %> prohibited this tooling from being saved:</h2>
+
+      <ul>
+      <% tooling.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :deliver_to %>
+    <%= form.text_field :deliver_to %>
+  </div>
+
+  <div class="field">
+    <%= form.label :part_type %>
+    <%= form.text_field :part_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :part_level %>
+    <%= form.text_field :part_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :commodity %>
+    <%= form.text_field :commodity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tool_source %>
+    <%= form.text_field :tool_source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_go2_lt %>
+    <%= form.number_field :go1_go2_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_t1_lt %>
+    <%= form.number_field :go2_t1_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t1_t2_lt %>
+    <%= form.number_field :t1_t2_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t2_t3_lt %>
+    <%= form.number_field :t2_t3_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t3_t4_lt %>
+    <%= form.number_field :t3_t4_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t4_linetry_lt %>
+    <%= form.number_field :t4_linetry_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raw_material_lt %>
+    <%= form.number_field :raw_material_lt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_1_target %>
+    <%= form.date_select :go1_1_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_1_actual %>
+    <%= form.date_select :go1_1_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_1_design_target %>
+    <%= form.date_select :go1_1_design_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_1_correlated %>
+    <%= form.date_select :go1_1_correlated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_2_target %>
+    <%= form.date_select :go1_2_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_2_actual %>
+    <%= form.date_select :go1_2_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_1_actual %>
+    <%= form.date_select :go2_1_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_2_target %>
+    <%= form.date_select :go2_2_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_2_actual %>
+    <%= form.text_field :go2_2_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_2_design_target %>
+    <%= form.date_select :go2_2_design_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_2_correlated %>
+    <%= form.date_select :go2_2_correlated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_3_actual %>
+    <%= form.date_select :go2_3_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_1_design_number %>
+    <%= form.text_field :go1_1_design_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go1_2_design_number %>
+    <%= form.text_field :go1_2_design_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_1_design_number %>
+    <%= form.text_field :go2_1_design_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_2_design_number %>
+    <%= form.text_field :go2_2_design_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :go2_3_design_change %>
+    <%= form.text_field :go2_3_design_change %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

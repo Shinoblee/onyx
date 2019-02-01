@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Part number:</strong>
+  <%= @part.part_number %>
+</p>
+
+<p>
+  <strong>Part name:</strong>
+  <%= @part.part_name %>
+</p>
+
+<p>
+  <strong>Process 1:</strong>
+  <%= @part.process_1 %>
+</p>
+
+<p>
+  <strong>Process 2:</strong>
+  <%= @part.process_2 %>
+</p>
+
+<p>
+  <strong>Process 3:</strong>
+  <%= @part.process_3 %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @part.color %>
+</p>
+
+<p>
+  <strong>Makerlayout:</strong>
+  <%= @part.makerlayout_id %>
+</p>
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>

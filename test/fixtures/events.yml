@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  line: 1
+  weld_dsps_delivery: 2019-02-01
+  weld_delivery: 2019-02-01
+  trim_dsps_delivery: 2019-02-01
+  trim_delivery: 2019-02-01
+  tier3_delivery: 2019-02-01
+  project_id: 1
+  plant_id: 1
+  stamp_weld_mat_target: MyString
+  plastic_mat_target: MyString
+  comp_elect_assy_mat_target: MyString
+  wire_harness_mat_target: MyString
+  cast_machine_mat_target: MyString
+  pipe_tube_mat_target: MyString
+  rubber_metal_mat_target: MyString
+
+two:
+  event_name: MyString
+  line: 1
+  weld_dsps_delivery: 2019-02-01
+  weld_delivery: 2019-02-01
+  trim_dsps_delivery: 2019-02-01
+  trim_delivery: 2019-02-01
+  tier3_delivery: 2019-02-01
+  project_id: 1
+  plant_id: 1
+  stamp_weld_mat_target: MyString
+  plastic_mat_target: MyString
+  comp_elect_assy_mat_target: MyString
+  wire_harness_mat_target: MyString
+  cast_machine_mat_target: MyString
+  pipe_tube_mat_target: MyString
+  rubber_metal_mat_target: MyString

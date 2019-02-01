@@ -1,0 +1,2 @@
+json.extract! event, :id, :event_name, :line, :weld_dsps_delivery, :weld_delivery, :trim_dsps_delivery, :trim_delivery, :tier3_delivery, :project_id, :plant_id, :stamp_weld_mat_target, :plastic_mat_target, :comp_elect_assy_mat_target, :wire_harness_mat_target, :cast_machine_mat_target, :pipe_tube_mat_target, :rubber_metal_mat_target, :created_at, :updated_at
+json.url event_url(event, format: :json)

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plant_name: MyString
+  acronym: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+
+two:
+  plant_name: MyString
+  acronym: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString

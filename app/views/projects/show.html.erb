@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plant:</strong>
+  <%= @project.plant_id %>
+</p>
+
+<p>
+  <strong>Project code:</strong>
+  <%= @project.project_code %>
+</p>
+
+<p>
+  <strong>Model year:</strong>
+  <%= @project.model_year %>
+</p>
+
+<p>
+  <strong>Family code:</strong>
+  <%= @project.family_code %>
+</p>
+
+<p>
+  <strong>Model code:</strong>
+  <%= @project.model_code %>
+</p>
+
+<p>
+  <strong>Multiple dev flow:</strong>
+  <%= @project.multiple_dev_flow %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

@@ -1,0 +1,2 @@
+class MakerLayout < ApplicationRecord
+end

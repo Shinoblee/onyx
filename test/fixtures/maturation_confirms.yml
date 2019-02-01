@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  planned_maturation: MyString
+  actual_maturation: MyString
+  maturation_comment: MyText
+  event_id: 1
+  part_id: 1
+
+two:
+  planned_maturation: MyString
+  actual_maturation: MyString
+  maturation_comment: MyText
+  event_id: 1
+  part_id: 1

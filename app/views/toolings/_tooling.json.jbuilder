@@ -1,0 +1,2 @@
+json.extract! tooling, :id, :deliver_to, :part_type, :part_level, :commodity, :tool_source, :go1_go2_lt, :go2_t1_lt, :t1_t2_lt, :t2_t3_lt, :t3_t4_lt, :t4_linetry_lt, :raw_material_lt, :go1_1_target, :go1_1_actual, :go1_1_design_target, :go1_1_correlated, :go1_2_target, :go1_2_actual, :go2_1_actual, :go2_2_target, :go2_2_actual, :go2_2_design_target, :go2_2_correlated, :go2_3_actual, :go1_1_design_number, :go1_2_design_number, :go2_1_design_number, :go2_2_design_number, :go2_3_design_change, :created_at, :updated_at
+json.url tooling_url(tooling, format: :json)

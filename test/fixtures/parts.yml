@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  part_number: MyString
+  part_name: MyString
+  process_1: MyString
+  process_2: MyString
+  process_3: MyString
+  color: false
+  makerlayout_id: 1
+
+two:
+  part_number: MyString
+  part_name: MyString
+  process_1: MyString
+  process_2: MyString
+  process_3: MyString
+  color: false
+  makerlayout_id: 1

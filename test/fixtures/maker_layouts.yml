@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  supplier_number: 1
+  location_code: 1
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+
+two:
+  supplier_number: 1
+  location_code: 1
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString

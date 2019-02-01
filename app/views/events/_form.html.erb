@@ -1,0 +1,97 @@
+<%= form_with(model: event, local: true) do |form| %>
+  <% if event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :event_name %>
+    <%= form.text_field :event_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :line %>
+    <%= form.number_field :line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weld_dsps_delivery %>
+    <%= form.date_select :weld_dsps_delivery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weld_delivery %>
+    <%= form.date_select :weld_delivery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trim_dsps_delivery %>
+    <%= form.date_select :trim_dsps_delivery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trim_delivery %>
+    <%= form.date_select :trim_delivery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tier3_delivery %>
+    <%= form.date_select :tier3_delivery %>
+  </div>
+
+  <div class="field">
+    <%= form.label :project_id %>
+    <%= form.number_field :project_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plant_id %>
+    <%= form.number_field :plant_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stamp_weld_mat_target %>
+    <%= form.text_field :stamp_weld_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plastic_mat_target %>
+    <%= form.text_field :plastic_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comp_elect_assy_mat_target %>
+    <%= form.text_field :comp_elect_assy_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wire_harness_mat_target %>
+    <%= form.text_field :wire_harness_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cast_machine_mat_target %>
+    <%= form.text_field :cast_machine_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pipe_tube_mat_target %>
+    <%= form.text_field :pipe_tube_mat_target %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rubber_metal_mat_target %>
+    <%= form.text_field :rubber_metal_mat_target %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plant_id: 1
+  project_code: MyString
+  model_year: 1
+  family_code: MyString
+  model_code: MyText
+  multiple_dev_flow: false
+
+two:
+  plant_id: 1
+  project_code: MyString
+  model_year: 1
+  family_code: MyString
+  model_code: MyText
+  multiple_dev_flow: false

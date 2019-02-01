@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event name</th>
+      <th>Line</th>
+      <th>Weld dsps delivery</th>
+      <th>Weld delivery</th>
+      <th>Trim dsps delivery</th>
+      <th>Trim delivery</th>
+      <th>Tier3 delivery</th>
+      <th>Project</th>
+      <th>Plant</th>
+      <th>Stamp weld mat target</th>
+      <th>Plastic mat target</th>
+      <th>Comp elect assy mat target</th>
+      <th>Wire harness mat target</th>
+      <th>Cast machine mat target</th>
+      <th>Pipe tube mat target</th>
+      <th>Rubber metal mat target</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.event_name %></td>
+        <td><%= event.line %></td>
+        <td><%= event.weld_dsps_delivery %></td>
+        <td><%= event.weld_delivery %></td>
+        <td><%= event.trim_dsps_delivery %></td>
+        <td><%= event.trim_delivery %></td>
+        <td><%= event.tier3_delivery %></td>
+        <td><%= event.project_id %></td>
+        <td><%= event.plant_id %></td>
+        <td><%= event.stamp_weld_mat_target %></td>
+        <td><%= event.plastic_mat_target %></td>
+        <td><%= event.comp_elect_assy_mat_target %></td>
+        <td><%= event.wire_harness_mat_target %></td>
+        <td><%= event.cast_machine_mat_target %></td>
+        <td><%= event.pipe_tube_mat_target %></td>
+        <td><%= event.rubber_metal_mat_target %></td>
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>

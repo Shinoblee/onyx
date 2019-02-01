@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plant name:</strong>
+  <%= @plant.plant_name %>
+</p>
+
+<p>
+  <strong>Acronym:</strong>
+  <%= @plant.acronym %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @plant.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @plant.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @plant.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @plant.country %>
+</p>
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

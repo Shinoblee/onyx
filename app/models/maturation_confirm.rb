@@ -1,0 +1,2 @@
+class MaturationConfirm < ApplicationRecord
+end
